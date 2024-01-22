@@ -19,190 +19,343 @@
     <!-- Custom property -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'btn-color': '#FF4240',
-                'main-color': '#131318',
-                'p-color': '#424247',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': '#FF4240',
+                        'main-color': '#131318',
+                        'p-color': '#424247',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
-<body class="font-manrope">
-<header class="container mx-auto">
-    <!-- navbar -->
-    <nav >
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-p-color">
-                  <li class="text-btn-color font-bold"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <p class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-btn-color">’</span>s</p>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-p-color">
-                <li class="text-btn-color font-bold"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end gap-6">
-                <i class="fa-solid fa-magnifying-glass hidden lg:flex tex-[#89898B] "></i>
-              <a class="btn   rounded-lg bg-btn-color text-white text-xl font-bold">Get Ticket</a>
-            </div>
-          </div>
-    </nav>
-    <!-- Banner Section -->
-    <section class="my-6 px-4">
-        <div class="lg:relative">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle border-none bg-black text-white">❮</a> 
-                    <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="Images/banner2.webp" class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❮</a> 
-                    <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❮</a> 
-                    <a href="#slide4" class="btn btn-circle border-none bg-black text-white">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="Images/banner2.webp" class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❮</a> 
-                    <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❯</a>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-black lg:w-[47%] p-8 lg:absolute lg:bottom-12 lg:right-12 rounded-2xl ">
-                <h3 class="text-white">Meet all the heroes from the field</h3>
-                <p class="text-[#FFFFFF99] mt-4" >A championship hockey team is often defined not only by collective excellence but also by the heroic performances of individual players who  rise to the occasion, becoming the heart and soul of the team. </p>
-              </div>
-        </div>
-    </section>
-</header>
-<main class="container mx-auto my-24">
-<!-- Professional Section Start-->
-    <section>
-        <div class="border border-dashed"></div>
-    <div class="text-center my-8">
-        <h2 class="text-main-color text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
-        <p class="text-p-color font-medium py-6">Certainly! Here are some professional hockey clubs from various leagues around the world: <br>Montreal Canadiens,Toronto Maple Leafs,New York Rangers,CSKA Moscow,SKA Saint Petersburg,Jokerit.</p>
-    </div>
-    <div class="border border-dashed"></div>
-    <div class="py-12 flex flex-col px-4 lg:flex-row justify-between gap-8">
-        <div>
-            <div class="radial-progress text-red-500 " style="--value:87;" role="progressbar"><span class="text-main-color text-2xl font-extrabold">87%</span>
-            </div>
-            <h3 class="text-main-color text-xl font-semibold pt-6">Prayer Facility</h3>
-            <p class="text-p-color pt-4">We will give players 100% facility for there Prayer</p>
-        </div>
-        <div>
-            <div class="radial-progress text-green-500 " style="--value:95;" role="progressbar"><span class="text-main-color text-2xl font-extrabold">95%</span>
-            </div>
-            <h3 class="text-main-color text-xl font-semibold pt-6">Experienced Coach</h3>
-            <p class="text-p-color pt-4">Our Coaches are very talented & friendly to players.</p>
-        </div>
-        <div>
-            <div class="radial-progress text-amber-500 " style="--value:90;" role="progressbar"><span class="text-main-color text-2xl font-extrabold">90%</span>
-            </div>
-            <h3 class="text-main-color text-xl font-semibold pt-6">Senior Player</h3>
-            <p class="text-p-color pt-4">Some famous player played in our club like," <br> Nathan Mackinnon,Cale Makar,Connor McDavid".</p>
-        </div>
-        <div>
-            <div class="radial-progress text-blue-500 " style="--value:80;" role="progressbar"><span class="text-main-color text-2xl font-extrabold">80%</span>
-            </div>
-            <h3 class="text-main-color text-xl font-semibold pt-6">Training Ground</h3>
-            <p class="text-p-color pt-4">We have own home ground & it is full of all specialty</p>
-        </div>
-    </div>
-    <div class="border border-dashed"></div>
-    </section>
-<!-- Professional Section End-->
-<!-- Start Program Sections -->
-<section>
-    <div class="text-center my-8">
-        <h2 class="text-main-color text-xl lg:text-4xl font-extrabold">Program Sections</h2>
-        <p class="text-p-color font-medium py-6">
-            Hockey programs can refer to a variety of initiatives, organizations, or activities related to the sport of hockey. Here are some common types of hockey programs:"Junior Program,Teenager Program,Professional Program,Youth Hockey Programs".
-        </p>
-        <div class="border border-dashed"></div>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
-        <div class="relative">
-            <img class="w-full h-[244px] lg:h-full" src="Images/2.png" alt="">
-            <div class="absolute top-4 lg:top-24 left-8 text-white">
-                <h3 class="text-3xl font-extrabold">
-                    Junior Program
-                </h3>
-                <p class="font-medium my-2">
-                    Junior hockey programs are initiatives designed to develop young players and provide them with opportunities to progress in their hockey careers. 
-                </p>
-                <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register Now</button>
-            </div>
-        </div>
-        <div class="relative">
-            <img class="w-full h-[244px] lg:h-full" src="Images/3.png" alt="">
-            <div class="absolute top-4 lg:top-24 left-10 text-white">
-                <h3 class="text-3xl font-extrabold">
-                    Junior Program
-                </h3>
-                <p class="font-medium my-2">
-                    Junior hockey programs are initiatives designed to develop young players and provide them with opportunities to progress in their hockey careers. 
-                </p>
-                <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register Now</button>
-            </div>
-        </div>
-        <div class="relative lg:col-span-2">
-            <img class="w-full h-[244px] lg:h-full object-cover" src="Images/4.png" alt="">
-            <div class="absolute top-4 lg:top-56 left-10 text-white">
-                <h3 class="text-3xl font-extrabold">
-                    Junior Program
-                </h3>
-                <p class="font-medium my-2">
-                    Junior hockey programs are initiatives designed to develop young  players and provide them with opportunities to progress in their hockey careers.
-                </p>
-                <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register Now</button>
-            </div>
-        </div>
-    </div>
-    <div class="border border-dashed mt-24"></div>
-</section>
-</main>
-<footer>
 
-</footer>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-p-color">
+                            <li class="text-btn-color font-bold"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-btn-color">’</span>s</p>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-p-color">
+                        <li class="text-btn-color font-bold"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:flex tex-[#89898B] "></i>
+                    <a class="btn   rounded-lg bg-btn-color text-white text-xl font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="my-6 px-4">
+            <div class="lg:relative">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle border-none bg-black text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/banner2.webp" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❮</a>
+                            <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❮</a>
+                            <a href="#slide4" class="btn btn-circle border-none bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="Images/banner2.webp" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❮</a>
+                            <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-black lg:w-[47%] p-8 lg:absolute lg:bottom-12 lg:right-12 rounded-2xl ">
+                    <h3 class="text-white">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] mt-4">A championship hockey team is often defined not only by collective
+                        excellence but also by the heroic performances of individual players who rise to the occasion,
+                        becoming the heart and soul of the team. </p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container mx-auto my-24">
+        <!-- Professional Section Start-->
+        <section>
+            <div class="border border-dashed"></div>
+            <div class="text-center my-8">
+                <h2 class="text-main-color text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-p-color font-medium py-6">Certainly! Here are some professional hockey clubs from various
+                    leagues around the world: <br>Montreal Canadiens,Toronto Maple Leafs,New York Rangers,CSKA
+                    Moscow,SKA Saint Petersburg,Jokerit.</p>
+            </div>
+            <div class="border border-dashed"></div>
+            <div class="py-12 flex flex-col px-4 lg:flex-row justify-between gap-8">
+                <div>
+                    <div class="radial-progress text-red-500 " style="--value:87;" role="progressbar"><span
+                            class="text-main-color text-2xl font-extrabold">87%</span>
+                    </div>
+                    <h3 class="text-main-color text-xl font-semibold pt-6">Prayer Facility</h3>
+                    <p class="text-p-color pt-4">We will give players 100% facility for there Prayer</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-green-500 " style="--value:95;" role="progressbar"><span
+                            class="text-main-color text-2xl font-extrabold">95%</span>
+                    </div>
+                    <h3 class="text-main-color text-xl font-semibold pt-6">Experienced Coach</h3>
+                    <p class="text-p-color pt-4">Our Coaches are very talented & friendly to players.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-amber-500 " style="--value:90;" role="progressbar"><span
+                            class="text-main-color text-2xl font-extrabold">90%</span>
+                    </div>
+                    <h3 class="text-main-color text-xl font-semibold pt-6">Senior Player</h3>
+                    <p class="text-p-color pt-4">Some famous player played in our club like," <br> Nathan Mackinnon,Cale
+                        Makar,Connor McDavid".</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-blue-500 " style="--value:80;" role="progressbar"><span
+                            class="text-main-color text-2xl font-extrabold">80%</span>
+                    </div>
+                    <h3 class="text-main-color text-xl font-semibold pt-6">Training Ground</h3>
+                    <p class="text-p-color pt-4">We have own home ground & it is full of all specialty</p>
+                </div>
+            </div>
+            <div class="border border-dashed"></div>
+        </section>
+        <!-- Professional Section End-->
+        <!-- Start Program Sections -->
+        <section>
+            <div class="text-center my-8">
+                <h2 class="text-main-color text-xl lg:text-4xl font-extrabold">Program Sections</h2>
+                <p class="text-p-color font-medium py-6">
+                    Hockey programs can refer to a variety of initiatives, organizations, or activities related to the
+                    sport of hockey. Here are some common types of hockey programs:"Junior Program,Teenager
+                    Program,Professional Program,Youth Hockey Programs".
+                </p>
+                <div class="border border-dashed"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
+                <div class="relative">
+                    <img class="w-full h-[244px] lg:h-full" src="Images/2.png" alt="">
+                    <div class="absolute top-4 lg:top-24 left-8 text-white">
+                        <h3 class="text-3xl font-extrabold">
+                            Junior Program
+                        </h3>
+                        <p class="font-medium my-2">
+                            Junior hockey programs are initiatives designed to develop young players and provide them
+                            with opportunities to progress in their hockey careers.
+                        </p>
+                        <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register
+                            Now</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="w-full h-[244px] lg:h-full" src="Images/3.png" alt="">
+                    <div class="absolute top-4 lg:top-24 left-10 text-white">
+                        <h3 class="text-3xl font-extrabold">
+                            Junior Program
+                        </h3>
+                        <p class="font-medium my-2">
+                            Junior hockey programs are initiatives designed to develop young players and provide them
+                            with opportunities to progress in their hockey careers.
+                        </p>
+                        <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register
+                            Now</button>
+                    </div>
+                </div>
+                <div class="relative lg:col-span-2">
+                    <img class="w-full h-[244px] lg:h-full object-cover" src="Images/4.png" alt="">
+                    <div class="absolute top-4 lg:top-56 left-10 text-white">
+                        <h3 class="text-3xl font-extrabold">
+                            Junior Program
+                        </h3>
+                        <p class="font-medium my-2">
+                            Junior hockey programs are initiatives designed to develop young players and provide them
+                            with opportunities to progress in their hockey careers.
+                        </p>
+                        <button class="btn btn-active bg-btn-color border-none text-white font-bold">Register
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dashed mt-24"></div>
+        </section>
+        <!-- End Program Sections -->
+        <!-- Our New Products Section  -->
+        <section>
+            <div class="text-center my-8">
+                <h2 class="text-main-color text-xl lg:text-4xl font-extrabold">Our New Products</h2>
+                <p class="text-p-color font-medium py-6">
+                    Sports products encompass a wide range of gear, equipment, and apparel designed to enhance
+                    performance, safety, and overall enjoyment for athletes and sports enthusiasts.
+                </p>
+                <div class="border border-dashed"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img class="w-36" src="Images/5.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">Replica away men's jacket SKA</h2>
+                      <p class="font-medium text-p-color">Replica away men's jacket SKA season 23/24</p>
+                      <div class="card-actions flex">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/6.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">World Cup Flags Football</h2>
+                      <p class="font-medium text-p-color">Qatar 2022 World Cup AL RIHLA Football - Size 5</p>
+                      <div class="card-actions flex justify-between">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img class="w-28" src="Images/7.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">Cap For Hockeys</h2>
+                      <p class="font-medium text-p-color">Snapback cap for Men</p>
+                      <div class="card-actions flex justify-between">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img class="w-36" src="Images/8.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">Sports Jarsey</h2>
+                      <p class="font-medium text-p-color">New Full Sleeve Jarsey T-shirt For Men</p>
+                      <div class="card-actions flex justify-between">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/9.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">DSC Bouncer Cricket Helmet</h2>
+                      <p class="font-medium text-p-color">
+                        Green | Size: Extra Small | for Men & Boys | Steel Grill |</p>
+                      <div class="card-actions flex justify-between">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img class="w-36" src="Images/10.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="space-x-2">
+                            <i class="fa-solid fa-star text-amber-500"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                      <h2 class="card-title text-main-color">Rubber Foot Ball Geru Star</h2>
+                      <p class="font-medium text-p-color">Material:Rubber | Size:4 |
+                        Age Range : Kids</p>
+                      <div class="card-actions flex justify-between">
+                        <span class="text-btn-color font-extrabold">Price - $22.00</span>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
